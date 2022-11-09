@@ -6,13 +6,7 @@ interface AppProps {
 }
 
 export default class App extends Component<AppProps> {
-  constructor(props: AppProps) {
-    super(props);
-
-    this.state = {
-      counter: 0
-    };
-  }
+  state = { counter: 0 };
 
   onIncrement = (): void => {
     this.setState({ counter: this.state.counter + 1 });
